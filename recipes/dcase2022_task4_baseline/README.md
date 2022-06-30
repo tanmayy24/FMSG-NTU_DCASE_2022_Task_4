@@ -113,6 +113,8 @@ The systems can be run from scratch using the following commands:
 `python train_stage_two_s_3.py --strong_real` <br />
 `python train_stage_two_s_4.py --strong_real` <br />
 
+You can find the pre-trained checkpoint for these systems [here](https://drive.google.com/drive/folders/1gbK9XUalFUWHtQ4NFYUQTSd70zhZX97-?usp=sharing).
+
 ### Generate Pseudo-Weak Labels for Stage-2 training
 To generate pseudo-weak labels for stage-2 training, run the script:
 For S-1 using FDY-CRNN (Stage-1): <br />
