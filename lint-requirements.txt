@@ -1,0 +1,2 @@
+black==19.10b0
+pycodestyle==2.5.0

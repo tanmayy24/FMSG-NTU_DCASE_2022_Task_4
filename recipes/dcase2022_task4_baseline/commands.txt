@@ -1,0 +1,28 @@
+cd ntu
+cd DES*
+cd rec*
+cd d*
+source activate /notebooks/ntu/dcase2021
+
+#--->python train_sed_ict_v3_strong_files_w_s.py --strong_real --resume_from_checkpoint=/notebooks/ntu/DESED_task/recipes/dcase2022_task4_baseline/exp/2021_baseline/version_77/last.ckpt
+
+
+
+#
+
+python psds1.py --strong_real --resume_from_checkpoint=/notebooks/
+
+python train_sed_ict_v3_stage_two_AT_strong_files.py --strong_real --eval_from_checkpoint=/notebooks/
+
+
+python train_sed_ict_v1_stage_two_AT_strong_files.py --strong_real --resume_from_checkpoint=/notebooks/
+
+
+
+#########################################################
+
+
+python train_psds1.py --strong_real --resume_from_checkpoint=/notebooks/
+
+
+python train_sed_ict_v3_stage_two_AT_strong_files.py --strong_real --resume_from_checkpoint=/notebooks/
