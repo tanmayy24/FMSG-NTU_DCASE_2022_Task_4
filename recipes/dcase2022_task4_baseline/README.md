@@ -5,8 +5,9 @@
 Please go through the [submitted technical report](https://drive.google.com/file/d/1GTrBU_95ZqvoAdmKDK3ACF0krZMRpB95/view?usp=sharing) to understand the system configurations developed in the work.
 
 ### Brief Description:
-The proposed framework is divided into two stages: Stage-1 focuses on the audio-tagging system, which assists the sound event detection system in Stage-2. We train the Stage-1 utilizing a strongly labeled set converted into weak predictions, a weakly labeled set, and an unlabeled set to develop an effective audio-tagging system. This audio-tagging system is then used to infer on the unlabeled set to generate reliable pseudo-weak labels, which are used together with the strongly labeled set and weakly labeled set to train the sound event detection system at Stage-2. In Stage-1, we used two different networks, which are frequency dynamic (FDY)-convolutional recurrent neural network (CRNN) and convolutional neural network (CNN)-14 based pretrained audio neural networks (PANNs) for our developed systems. While the system at Stage-2 is based on FDY-CRNN for all the systems submitted to the challenge.
+The proposed framework is divided into two stages: Stage-1 focuses on the audio-tagging system, which assists the sound event detection system in Stage-2. We train the Stage-1 utilizing a strongly labeled set converted into weak predictions, a weakly labeled set, and an unlabeled set to develop an effective audio-tagging system. This audio-tagging system is then used to infer on the unlabeled set to generate reliable pseudo-weak labels, which are used together with the strongly labeled set and weakly labeled set to train the sound event detection system at Stage-2. 
 
+![File](./img/two_stage.png)
 ## Requirements
 
 The script `conda_create_environment.sh` is available to create an environment which runs the
