@@ -69,13 +69,13 @@ data: # change with your paths if different.
   eval_folder_44k: "../../data/dcase/dataset/audio/eval21"
   audio_max_len: 10
   fs: 16000
-  net_subsample: 2
+  net_subsample: 4
 opt:
   lr: 0.001
 feats:
   n_mels: 128
   n_filters: 2048
-  hop_length: 363
+  hop_length: 256
   n_window: 2048
   sample_rate: 16000
   f_min: 0
@@ -93,6 +93,5 @@ net:
   padding: [1, 1, 1, 1, 1, 1, 1]
   stride: [1, 1, 1, 1, 1, 1, 1]
   nb_filters: [ 16, 32, 64, 128, 128, 128, 128 ]
-  pooling: [ [ 2, 2 ], [ 1, 2 ], [ 1, 2 ], [ 1, 2 ], [ 1, 2 ], [ 1, 2 ], [ 1, 2 ] ]
+  pooling: [ [ 2, 2 ], [ 2, 2 ], [ 1, 2 ], [ 1, 2 ], [ 1, 2 ], [ 1, 2 ], [ 1, 2 ] ]
   dropout_recurrent: 0
-
